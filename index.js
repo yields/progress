@@ -23,6 +23,7 @@ function Progress(total){
   if (!(this instanceof Progress)) return new Progress(total);
   this.total = total;
   this.progress = 0;
+  this.percent = 0;
 }
 
 /**
@@ -32,15 +33,15 @@ function Progress(total){
 emitter(Progress.prototype);
 
 /**
- * Update progress to `n`.
+ * Update progress by `n`.
  *
  * @param {Number} n
  * @return {self}
  */
 
 Progress.prototype.update = function(n){
-  this.percent = ~~ (this.progress += n) / this.total * 100;
-  if (100 == this.percent) return this.end();
+  this.percent =~~ ((this.progress += n) / this.total * 100);
+  if (100 >= this.percent) return this.end();
   return this.emit('progress', this);
 };
 
