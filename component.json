@@ -1,0 +1,15 @@
+{
+  "name": "progress",
+  "repo": "yields/progress",
+  "description": "generic progress api",
+  "version": "0.0.1",
+  "keywords": ["progress"],
+  "dependencies": {
+    "component/emitter": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}

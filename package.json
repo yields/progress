@@ -1,0 +1,15 @@
+{
+  "name": "progress-component",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Amir Abu Shareb <yields@icloud.com>",
+  "keywords": ["progress"],
+  "description": "generic progress emitter",
+  "dependencies": {
+    "emitter-component": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  }
+}
