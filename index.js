@@ -4,7 +4,7 @@
  */
 
 var emitter = process && process.env
-  ? require('emitter-component')
+  ? require('generic-progress')
   : require('emitter');
 
 /**
